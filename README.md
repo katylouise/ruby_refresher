@@ -1,4 +1,4 @@
 # Ruby Refresher
 
-Little exercises to practise my Ruby Skillsg
+Little exercises to practise my Ruby Skills
 
