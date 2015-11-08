@@ -81,10 +81,12 @@ end
 
 # return the shortest word in an array
 def shortest_word_in_array(array)
+  array.reduce{ |a, b| a.length < b.length ? a : b }
 end
 
-# return the shortest word in an array
+# return the longest word in an array
 def longest_word_in_array(array)
+  array.reduce{ |a, b| a.length > b.length ? a : b }
 end
 
 # add up all the numbers in an array, so [1, 3, 5, 6]
