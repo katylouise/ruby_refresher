@@ -239,11 +239,9 @@ end
 # e.g. january 1st, will next be a friday in 2016
 def your_birthday_is_on_a_friday_in_the_year(birthday)
   year = birthday.year
-  month = birthday.month
-  day = birthday.day
-  date = Time.new(year, month, day)
+  date = Time.new(year, birthday.month, birthday.day)
   while !date.friday? do
-    date = Time.new(year += 1, month, day)
+    date = Time.new(year += 1, birthday.month, birthday.day)
   end
   return year
 end
